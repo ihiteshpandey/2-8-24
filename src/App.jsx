@@ -9,7 +9,7 @@ function App() {
   //const [lists,setLists] = useState(); 
   return (
       
-   <div className="App">
+   <div className="">
       <Navbar/>
       <div>
       <ToggleSwitch/>
@@ -17,6 +17,7 @@ function App() {
       <Tracker/>
       <h3>Stayfree</h3>
     </div>
+
   );
 }
 

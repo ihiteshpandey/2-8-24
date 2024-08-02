@@ -1,4 +1,4 @@
-import React from 'react';
+{/*import React from 'react';
 import './navbar.css';  
 
 function Navbar() {
@@ -30,4 +30,50 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; */}
+
+
+
+
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faChartBar, faCog, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+
+const NavBar = () => {
+  return (
+    <nav className="bg-gray-800 text-white w-64 h-screen p-4">
+      <ul className="space-y-2">
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faHome} className="mr-2" />
+          <a href="#home">Dashboard</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faChartBar} className="mr-2" />
+          <a href="#usage">Daily Usage Limits</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faChartBar} className="mr-2" />
+          <a href="#usage">Focus Mode</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faChartBar} className="mr-2" />
+          <a href="#usage">Limits on the Go</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faChartBar} className="mr-2" />
+          <a href="#usage">In-App blockingq</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faCog} className="mr-2" />
+          <a href="#settings">Settings</a>
+        </li>
+        <li className="p-2 hover:bg-gray-700 rounded flex items-center">
+          <FontAwesomeIcon icon={faQuestionCircle} className="mr-2" />
+          <a href="#help">Help</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default NavBar;
